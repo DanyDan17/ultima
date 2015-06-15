@@ -1,0 +1,492 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>}
+<script src="jquery-mobile/acciones.js"></script>
+<style>
+<br>
+				
+				
+				#capatex{
+					position:relative;
+					left:10%;
+					top:10%;
+					background-color:#3CC;
+					width:70%;
+				}
+				#textocap{
+					position:relative;
+					left:10%;
+					top:10%;
+					background-color:#3CC;
+					width:80%;
+					text-align:center;
+				}
+					.texto 
+				{
+				font-family: "Comic Sans MS", cursive;
+				font-size: 18px;
+				font-weight:bold;
+				color:#00F;
+				}
+				   .tit
+  				 {
+				font-family: "Comic Sans MS", cursive;
+				font-size:24px;
+				font-weight:bold;
+				color:#90C;
+				text-align: center;
+   				}
+
+</style>
+</head> 
+<body> 
+
+<div class="ui-bar-e" id="page" data-role="page" style="background-image:url(imagenes/portada.jpg)">
+	<div class="ui-btn-hover-e" data-role="header">
+		<img src="imagenes/encabezado.jpg"; width="100%">
+	</div>
+	<div data-role="content">
+		<div align="center" data-role="collapsible-set" data-type="vertical">
+      <div style="width:80%;">
+      
+      
+        <a href="#page2" data-role="button" id="bot1">
+       	TECNOLOGIA
+        </a>
+        
+        <a href="#page3" data-role="button" id="bot1">
+        SIGNOS DEL ZODICACO
+        </a>
+        
+       	<a href="#page4" data-role="button" id="bot1">
+       	OCIOS
+        </a>
+        
+       	<a href="#page7" data-role="button" id="bot1">
+        ESTUDIANTIL
+        </a>
+        
+        <a href="#page8" data-role="button" id="bot1">
+        CREDITOS DEL APP
+        </a>
+
+        
+        
+      	<input type="button" value="Cerrar App" onclick="window.close()">
+        
+        
+        </div>
+        </div>     		
+	</div>
+</div>
+
+<div class="ui-btn-down-a" id="page2" data-role="page" data-add-back-btn="true">
+  <div class="ui-btn-hover-b" data-role="header">TECNOLOGIA</div>
+	<div class="ui-btn-hover-e" data-role="content" style="background-image:url(imagenes/fondow.png)">
+    <div id="textocap">
+	  <p><strong>&ldquo;Internet de las Cosas&rdquo; o dispositivos conectados en la nube.</strong> En el futuro , los chips y sensores conectados a la nube estarán en dispositivos de uso cotidiano. No serán sólo la televisión, tablets o móviles los que estén conectados sino también la calefacción, el coche, la nevera, marcapasos y este<a href="http://www.ticbeat.com/tecnologias/teddy-guardian-mucho-mas-simple-juguete/" target="_blank"> osito de peluche tan especial</a>.</p>
+	  <p><img src="imagenes/internet.jpg" width="70%" height="70%"></p>
+	  <p><strong>Impresión 3D.</strong> Hace cinco años, las <a href="http://es.wikipedia.org/wiki/Impresi%C3%B3n_3D" target="_blank">impresoras 3D</a> estaban fuera de nuestro alcance, salvo para las grandes empresas. Hoy en día cualquier persona con $1,300 puede comprar una impresora 3D Cubify y puede imprimir miles de objetos.</p>
+      <div id="apDiv2"></div>
+      <p><img src="imagenes/impresion.jpg" width="70%" height="70%"></p>
+      <p><strong>Coches sin conductor.</strong> Tanto Tesla y Google están trabajando en la construcción de un coche que se conduce solo. En Masdar, (Emiratos Árabes Unidos), la &ldquo;Ciudad del Futuro&rdquo;, los coches de transporte automatizados electrónicos (llamados podcars) se utilizan en subterráneos como parte de la iniciativa de construir una ciudad sin emisiones de carbono. </p>
+      <div id="apDiv3"></div>
+      <p><img src="imagenes/cochesin.jpg" width="70%" height="70%"></p>
+      <p><strong>Viajes privados al Espacio.</strong> Compañías como SpaceX y Virgin Galactic están trabajando para permitir viajes espaciales comerciales. En el año 2025, cualquier persona con $100.000 podrá ir al espacio. En el año 2050, cualquier persona con $5.000 podrá hacer el viaje.</p>
+      <div id="apDiv4"></div>
+      <p><img src="imagenes/espa.jpg" width="70%" height="70%"></p>
+      <p><strong>Desalinización del Agua.</strong> Gracias a una investigación reciente en el MIT se ha utilizado grafeno para crear una forma de alta eficiencia energética para eliminar la sal del agua. A medida que la población humana crece, llegará a 9.500 millones en 2050, garantizará el acceso al agua potable para una parte de pueblos que carecen de ella. Algo de vital importancia para permitir tanto la mejora de la salud y de la alimentación como la estabilidad geopolítica.</p>
+      <div id="apDiv5"></div>
+      <p><img src="imagenes/agua.jpg"  width="70%" height="70%"></p>
+
+	<BR>    
+</div>
+</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true" style="background-image:url(imagenes/fondosignos.jpg)">
+	<div data-role="header">
+		  <div class="ui-btn-hover-b" data-role="header">COMPORTAMIENTOS DE CADA SIGNO </div>
+	</div>
+	<div data-role="content">	
+		
+        	<div align="center" data-role="collapsible-set" 	 		data-type="vertical">
+      <div style="width:80%;">
+      
+        <a href="#pagetierra" data-role="button" id="bot1">
+       	ELEMENTO TIERRA
+        </a>
+        <a href="#pageagua" data-role="button" id="bot1">
+        ELEMENTO AGUA
+        </a>
+     	<a href="#pagefuego" data-role="button" id="bot1">
+        ELEMENTO FUEGO
+        </a>
+        <a href="#pageaire" data-role="button" id="bot1">
+        ELEMENTO AIRE
+        </a>
+        </div>
+        </div>
+	</div>
+    </div>
+    
+<div data-role="page" id="pagetierra" data-add-back-btn="true" style="background-image:url(imagenes/fondosignos.jpg)">
+	<div data-role="header">
+		 <div class="ui-btn-hover-b" data-role="header">SIGNOS DEL ELEMENTO TIERRA</div>
+	</div>
+	<div data-role="content">	
+    <div id="textocap">
+	<h1>TAURO  (DEL ABRIL 20 AL 19 DE MAYO)</h1>
+    <img src="imagenes/tauro.jpg"  width="70%" height="70%">
+    <P>
+    La característica principal de este signo es su fortaleza.  Sin embargo, esa fortaleza en el aspecto negativo conlleva obstinación, cólera y una naturaleza difícil de cambiar. El planeta gobernante, Venus, emocional, alienta esas tendencias.   A pesar de ello, este signo tiene  una naturaleza muy positiva al ser normalmente fieles y confiables.
+
+Los taurianos son oportunistas, pero no las buscan sino que toman las oportunidades según vayan llegando.  Tienen buena memoria y retienen gran cantidad de información que luego presentan en forma práctica.  Además, planean con tiempo y, por lo general. realizan sus propósitos.
+
+Son genuinos y generosos lo que los convierten en los mejores ami­gos y cuando hacen dinero, son liberales con éste sobre todo con sus parientes y amistades. Buscan la belleza en la sencillez más que una representación lujosa u ostentosa sin sentido. 
+
+Para las personas de Tauro sus propios intereses usualmente vie­nen primero, pero se hacen generosas después, aunque pueden serlo en cualquier momento a favor de alguien que los haya impresionado emocionalmente. Aunque lentos en acción, una vez interesados en algo pueden vencer todos los obstáculos.
+
+Debido al hecho que son tercos y coléricos, no deben hacer nunca decisiones cuando están excitados u ofuscados.  Deben calmarse para lograr ver con claridad el camino.
+
+En negocios, la mente práctica de los individuos de Tauro los hacen ade­cuados en el campo de la construcción y en la actividad mecánica donde destacan como ingenieros, constructores y contratistas.   Igualmente, su esfuerzo sostenido los hace excelentes en las áreas de la química y de las investigacio­nes científicas.  Su habilidad artística, también, contribuye para que sean buenos fotógrafos, escultores, dibujantes y arquitectos encargados de embellecer terrenos.
+
+    
+    
+    </P>
+    <br>
+    <h1>VIRGO (DEL 22 DE AGOSTO AL 22 DE SEPTIEMBRE)</h1>
+    <img src="imagenes/virgo.jpg"  width="70%" height="70%">
+    <P>
+    Este es el signo de análisis, de reflexión y de meditación.  Por ello, son  buenos razonadores  aunque son inclinados a perder mucho tiempo en detalles mínimos y también a agotar un tema.
+
+Las personas nacidas bajo el signo de Virgo tienen mentes investigadoras y no descansarán hasta haber obtenido toda la información que les interesa.  Debido a ello, logran que la gente les diga lo que quieren sin que nadie se dé cuenta y luego forman con esos datos y los logrados de otras fuentes un cuadro completo y muy exacto.
+
+Junto con la capacidad de análisis, tienen una buena memoria.  Esto le facilita poder expresar aquello que han leído de una forma nueva y atractiva.  Sin embargo, esa capacidad de analizar y reflexionar los hacen también criticar personas y proyectos y aunque sus propósitos son generalmente constructivos a menudo se les considera “criticones” lo que causa malos entendimientos y pérdida de oportunidades
+
+A los virgorianos les interesa el orden y la armonía.  Sin embargo, les costará obtenerlo si se concentran demasiado en una masa de detalles sin importancia.  En su lugar deben aprender a simplifi­car sus vidas y propósitos.  Entre menos cosas les preocupen, mayor será su capacidad de concentración para alcanzar sus objetivos en la vida.
+
+La imaginación gobierna la mente de los nacidos bajo el signo de Virgo tanto en su aspecto positivo (creación e innovación) también en su fase negativa (temor a posibles accidentes, enfermedades y problemas financieros). Para no ser víctimas de su propia imaginación en el aspecto negativo, deben lograr mayor seguridad en sí mismos.
+
+Usualmente, puede alzarse sobre esas faltas, una vez que se dan cuenta de ellas, porque tienen gran control propio si lo desean. Los fracasos los excitan a nuevos propósitos y sus mentes son rápi­das en mirar próximos triunfos.
+
+En negocios, los individuos de Virgo brillarán más en áreas donde sus rápidas mentes ven nuevas oportunidades o tratos productivos como  en análisis de mercado y sus tendencias.  Además, pueden ser buenos escritores, publi­cistas, abogados y profesores.  En el caso que quisiera ser vendedores, actores, conferencistas y empresarios del espectáculo deben vencer su concentración en sí mismos.
+
+    
+    
+    </P>   
+    <br>
+    <h1>CAPRICORNIO (22 DE DICIEMBRE AL 21 DE ENERO)</h1>
+    <img src="imagenes/capricornio.jpg"  width="70%" height="70%">
+    <P>
+    Las principales características de este signo son la reflexión en sus métodos y ac­ciones y la intuición.  Es, además, un signo de intelectualidad sin olvidar un toque práctico. Debido a su naturaleza, les gusta la soledad la cual utilizan para concentrarse en nuevas ideas y hacer decisiones importantes.  
+
+Los nacidos bajo el signo de Capricornio tienen algo que parece un sexto sentido y, a menudo, ellos se dan cuenta de él, ya que conocen muchas veces lo que la otra persona les va a decir antes que éstas abra, siquiera, la boca.
+
+Debido a que tienen gran temor al ridículo, lo que los hace muy reservados, es necesario que, desde edades tempranas, sean alentados para que ganen confianza en sí mismos y desarrollen sus cualidades inteligentes e ingeniosas.
+
+A los Capricornianos les preocupa mucho la oposición y las críticas y deben aprender a enfrentarse a tales retos mediante paciencia y perseverancia. Es importante, también,  ampliar sus puntos de vista o aceptar el lado más práctico de la vida, ya que si no lo hacen pueden convertirse en seres ásperos y a darse a temeraria disipación.
+
+Tienen un gran temor al futuro y, por ello, ahorran mucho y tratan de ser económicos llegando inclusive a que muchos los tildan como avaros o tacaños. Sin embargo, no son egoístas y a la hora de dar a sus seres queridos son, a veces, demasiado generosos.
+
+Su interés por triunfar es usualmente muy fuerte lo que despierta mezquinos celos en otros. Si no caen víctimas de la desesperación, pueden superar sus pro­blemas y vencer todas las limitaciones, convirtiéndose en verdaderos optimistas
+
+En negocios, los individuos de este signo son considerados como excelentes administra­dores y contadores y su visión para lo práctico los hace buenos financieros.  Profesionalmente, tienen éxito como abogados, maestros, conferenciantes.
+
+    </P>   
+    </div>
+	</div>
+</div>
+<div data-role="page" id="pagefuego" data-add-back-btn="true" style="background-image:url(imagenes/fondosignos.jpg)">
+	<div data-role="header">
+		 <div class="ui-btn-hover-b" data-role="header">SIGNOS DEL ELEMENTO FUEGO</div>
+	</div>
+	<div data-role="content">	
+    <div id="textocap">
+    	<h1>ARIES  (DEL 21 DE MARZO AL 19 DE ABRIL)</h1>
+    <img src="imagenes/aries.jpg"  width="70%" height="70%">
+    <P>
+   La característica principal de los nacidos en el signo Aries es su trabajo mental. Las personas nacidas bajo este signo son inteligentes y altamente adaptables; pero también son impetuosas, ambiciosa y hasta agresivas; características que están acentuadas por el planeta gobernante, Marte.
+
+Tienen gran impulso para iniciar nuevos proyecto, pero si no están bien dirigidos sus esfuerzos pueden desvanecerse y esparcirse.
+
+Pueden enojarse con facilidad, pero así mismo, a menudo, se calman.  Tienen un excelente buen humor y la capacidad de decir siempre lo conveniente en el momento oportuno lo que causa admiración en los demás. 
+
+Les gusta la novedad en todos los campos e influyen con relativa facilidad en otras personas para que trabajen con ellos, pero, una vez se acostumbran, pierden interés en ello o desean que los demás terminen su trabajo sin ser involucrado.
+
+    
+
+ 
+Bien dirigidos es un signo de visionarios e idealistas que pueden, elevarse a posiciones de importancia y estima.  Sin embargo, su impaciencia los puede arruinar, convirtiéndolos en individuos egotistas y que avalúen el dinero como un fin
+
+Profesionalmente, son excelentes actores, abogados y estadistas. También están calificados para el trabajo artístico y literario. 
+
+    
+    
+    </P>
+    <br>
+    <h1>LEO  (DEL 27 DE JULIO AL 21 DE AGOSTO)</h1>
+    <img src="imagenes/leo.jpg"  width="70%" height="70%">
+    <P>
+    Este es un signo de exuberancia lo cual denota una perso­nalidad poderosa, ambiciosa e idealista combinado con un liderato innato y es que la brillantez de este signo refleja la gran­deza de su planeta gobernante, el Sol.
+
+Sin embargo, esa alta mentalidad si no es dirigida de forma positiva puede llegar a convertir a los nacidos de Leo en seres despóticos y tiranos.  Pasan sobre sus propia faltas tan naturalmente que al parecer no se dan cuenta de ellas y, si alguien los critica, consideran que ellos están por encima de esas simples opiniones. De aquí que mientras más alto se eleven, más convencidos están de su propia importancia y menos se preocupan por la oposición.
+
+Su éxito se ve marcada por la influencia que ejercen sobre todas las personas con que están en contacto, a menudo ganándose a aquella que les son opuestos con su magnetismo. 
+
+Signo zodiacal leo
+
+Los individuos nacidos bajo el signo de Leo son muy activos y les gusta la vida y las actividades al aire libre porque anhelan el calor del Sol.  
+
+Buscan la notoriedad y prefieren estar en el centro de su propio universo donde son apreciados y amados por sus familiares y amigos a los cuales defiende de manera impulsiva.   Sin embargo,  pueden ser fácilmente lisonjeados y cometen el error de confiar en amigos falsos.
+
+Profesionalmente son excelentes médicos y enfer­meras por la influencia que ejercen sobre sus pacientes. Igualmente, presentan aptitudes para el teatro. Muchos actores notables han na­cido bajo este signo y en el campo literario, tienen una fuerte tendencia a lo dramático, propio del carácter de Leo.
+
+En un sentido estrictamente comercial, la gente de Leo sobresale en cualquier campo que requiera promoción y desarrollo.  Son capaces hoteleros, dueños de restaurantes, negociantes en bienes raíces, administradores de ventas y directores, ya que su entusiasmo es contagioso.
+
+    
+    </P>   
+    <br>
+    <h1>SAGITARIO (DEL 22 DE NOVIEMBRE AL 21 DE DICIEMBRE)</h1>
+    <img src="imagenes/sagitario.jpg"  width="70%" height="70%">
+    <P>
+  
+Su principal característica es la solidaridad y no en vano es el signo donde han existido grandes personalidades dedicadas a causas humanitarias, a grandes misiones y al avance de la humanidad en general. Su planeta gobernante, Satur­no, les suministra la discreción suficiente que les permite realizar proyectos sociales de un modo discreto y sorprendente.
+
+Sin embargo, su mayor falta es la indolencia, porque si se demoran o tratan la vida con pereza, nunca llegarán a ninguna parte. En ese sentido, el Acuario no desarrollado promete mucho pero hace poco, excepto de un modo confuso y a veces fanático que resulta contraproducente.
+
+Deben mantener tam­bién su natural humildad, porque, sin ella, se pueden volver jactanciosos e insolentes, perdiendo la popularidad que puede llevarlos lejos.
+
+signo zodiacal acuario
+Una vez los nacidos en el signo de acuario superan la indolencia y deciden llevar a cabo un proyecto, pueden lograr su éxito, a pesar de obstáculos insuperables, mediante la plena aplicación de todo lo que han aprendido y la confianza en sí mismos.
+
+Su devoción a la humani­dad es profunda, aunque pueden ser impulsados por intereses pro­pios y criticados por darse mucha importancia.
+
+En negocios, los nacidos bajo Acuario son hábiles vendedores y capaces subastadores, ya que saben despertar el interés. Son grandes promotores y tienen éxito especialmente en la política.
+
+
+    </P>   
+    </div>
+
+	</div>
+</div>
+<div data-role="page" id="pageaire" data-add-back-btn="true" style="background-image:url(imagenes/fondosignos.jpg)">
+	<div data-role="header">
+		 <div class="ui-btn-hover-b" data-role="header">SIGNOS DEL ELEMENTO AIRE</div>
+	</div>
+	<div data-role="content">	
+    <div id="textocap">
+	<h1>GÉMENIS DEL 20 DE MAYO AL 20 DE JUNIO)</h1>
+    <img src="imagenes/geminis.jpg"  width="70%" height="70%">
+    <P>
+Las características principales de este signo son su rapidez y su adaptabilidad a los cambios del ambiente. El planeta gobernante, Mercurio, es un fuerte factor en esa naturaleza.  Además son personas afectuosas, populares y rápidas en adquirir nuevos conocimientos y capacidades.
+
+Géminis presenta una gran dualidad, ya que pueden pasar de lo caliente a lo frío como la oscilación de un péndulo.  Es decir, su actitud amistosa puede pasar a desconfianza con relativa facilidad lo cual corresponde sencillamente a su naturaleza mutable.
+
+El individuo de Géminis es libre con sus sentimientos y muy frecuentemente descuida o rechaza a los demás.  El anhelo de tener nuevas experiencias es un ideal que los lleva al desengaño al momento de su realización o cumplimiento.  Tienen expectativas, en ocasiones, pocos realistas.  Aquellos que pueden ubicar sus pies en tierra, podrán, con facilidad, realizar grandes empresas.
+
+
+Desperdician verdaderas oportunidades mientras van en busca de algo mejor o diferente y corren el riesgo de perder lo que ya tienen por algo incierto que tal vez nunca se concretice.  Deben, por ello, recordar el refrán “Mejor pájaro en mano que ciento volando”.
+
+En negocios, los individuos de Géminis pueden ser buenos vendedores, promotores y a menudo, exitosos especula­dores. También tendrán éxito en el área de publicidad, televisión, transporta­ción y otros campos en que deben mantenerse al día con las ten­dencias modernas. 
+
+
+    
+    
+    </P>
+    <br>
+    <h1>LIBRA   (DEL 23 DE SEPTIEMBRE AL 22 DE OCTUBRE)</h1>
+    <img src="imagenes/libra.jpg"  width="70%" height="70%">
+    <P>
+    Este es el signo de la justicia, indicador de personas que buscan equilibrar todo y para ello promueven la buena volun­tad y la amistad.  Además, procuran encontrar, en todas partes, amor, armonía y belleza, tal como lo refleja el planeta gobernante del signo, Venus.
+
+Nunca son sordos a un llamamiento de familiares o amigos, defienden al más débil y a menudo se ponen del lado de completos extraños.  Por ello, en ocasiones, son engañados al creer en éstos.
+
+Son tan susceptibles a la influencia de quienes los impresionan, que hasta imitarán sus maneras y adoptan rápidamente sus características.
+
+Las personas nacidas en el signo Libra se sienten descontentas con aquello en que son menospre­ciadas, aun cuando sea por su propio interés y sino son consultadas en una materia, lo consideran como injusto y se sienten ofendidos.
+
+Aunque podrían imitar alguna conducta, tienen originalidad en las ideas. Sus propósitos son siempre muy altos, pero actúan impulsiva­mente cuando lo consideran bueno sin meditar que tal vez al final salgan mal librados. Son generosos y esperan reciprocidad en otros y, si no lo logran, están inclinados a considerarlo como un desaire lo que causa rompimientos entre ellos y las personas a quienes concierna.
+
+La gente nacida bajo el signo de Libra gusta de las diversiones y la excitación. Su amor a la armonía los hace aficionados a la música.
+
+En negocios, los individuos de Libra alcanzan altas posiciones ya que su criterio es del tipo ejecutivo. Igualmente, su simpatía hacia las personas subordinadas pueden resultar de gran valor.  En cuanto a las profesiones, a menudo son inventores y son también buenos historiadores e investigadores científicos.  Son excelentes, actores, músicos y cantores. Tam­bién tienen capacidad matemática y tienen aptitudes para muchos oficios.
+
+    
+    
+    </P>   
+    <br>
+    <h1>ACUARIO (DEL 21 DE ENERO AL 19 DE FEBRERO)</h1>
+    <img src="imagenes/acuario.jpg"  width="70%" height="70%">
+    <P>
+    Las principales características de este signo son la reflexión en sus métodos y ac­ciones y la intuición.  Es, además, un signo de intelectualidad sin olvidar un toque práctico. Debido a su naturaleza, les gusta la soledad la cual utilizan para concentrarse en nuevas ideas y hacer decisiones importantes.  
+
+Los nacidos bajo el signo de Capricornio tienen algo que parece un sexto sentido y, a menudo, ellos se dan cuenta de él, ya que conocen muchas veces lo que la otra persona les va a decir antes que éstas abra, siquiera, la boca.
+
+Debido a que tienen gran temor al ridículo, lo que los hace muy reservados, es necesario que, desde edades tempranas, sean alentados para que ganen confianza en sí mismos y desarrollen sus cualidades inteligentes e ingeniosas.
+
+A los Capricornianos les preocupa mucho la oposición y las críticas y deben aprender a enfrentarse a tales retos mediante paciencia y perseverancia. Es importante, también,  ampliar sus puntos de vista o aceptar el lado más práctico de la vida, ya que si no lo hacen pueden convertirse en seres ásperos y a darse a temeraria disipación.
+
+Tienen un gran temor al futuro y, por ello, ahorran mucho y tratan de ser económicos llegando inclusive a que muchos los tildan como avaros o tacaños. Sin embargo, no son egoístas y a la hora de dar a sus seres queridos son, a veces, demasiado generosos.
+
+Su interés por triunfar es usualmente muy fuerte lo que despierta mezquinos celos en otros. Si no caen víctimas de la desesperación, pueden superar sus pro­blemas y vencer todas las limitaciones, convirtiéndose en verdaderos optimistas
+
+En negocios, los individuos de este signo son considerados como excelentes administra­dores y contadores y su visión para lo práctico los hace buenos financieros.  Profesionalmente, tienen éxito como abogados, maestros, conferenciantes.
+
+    </P>   
+    </div>
+	</div>
+</div>
+<div data-role="page" id="pageagua" data-add-back-btn="true" style="background-image:url(imagenes/fondosignos.jpg)">
+	<div data-role="header">
+		 <div class="ui-btn-hover-b" data-role="header">SIGNOS DEL ELEMENTO AGUA</div>
+	</div>
+	<div data-role="content">	
+    <div id="textocap">
+	<h1>CÁNCER (DEL 21 DE JUNIO AL 22 DE JULIO)</h1>
+    <img src="imagenes/cancer.jpg"  width="70%" height="70%">
+    <P>
+Los nacidos en el signo de Cáncer son sinceros, amantes del hogar, de la vida de familia y la tranquilidad doméstica.  Estas personas son, también, solidarias dedicándose a menudo a causas humanitarias  Sin embargo, sus actitudes y aún sus objetivos pueden ser tan cambiables como el planeta gobernante del signo,la Luna.
+
+Además, son muy apegados a la tradición como si fuera parte de ella.  Es decir, aman el pasado y algunas veces viven prácticamente en él, lo que explica la forma en que buscan lo nuevo, pero retornan siempre a lo viejo.
+
+Las personas nacidas bajo es signo de Cáncer son muy sensibles, aunque frecuentemente no lo demuestra.   Las discusiones y peleas los abruman, las críticas los afectan y, como caracoles, se refugian en su concha.
+
+
+Aunque son conservadoras, les gustan, también, las diversiones y la vida social. Sus actitudes pueden varías de día y de noche y aún los cambios del tiempo pueden afectar su naturaleza.
+
+Su lealtad a los amigos y familia es constante, a menos que sienta que ha sido despreciado, ya sea de forma real o imaginaria.   Aunque la otra persona se disculpe, no vuelve a sentirse como antes.  Por ello, debe evitar todo rencor porque son sentimientos negativos que lo pueden afectar.
+
+En los negocios, las personas de este signo tienen éxito en actividades ya establecidas. Tienen buen éxito como industriales y comerciantes, porque para ellas la calidad es importante y se enor­gullecen de su nombre.  Como profesionales, son buenos maestros, bibliotecarios, historiadores y hombres de ciencia.  
+
+
+    
+    
+    </P>
+    <br>
+    <h1>PISCIS (DE 20 DE FEBRERO AL 20 DE MARZO)</h1>
+    <img src="imagenes/piscis.jpg"  width="70%" height="70%">
+    <P>
+   Es el signo más modesto, humilde y confiado del zodíaco.  Son per­sonas que no quieren demostrar  sus conocimientos considerándolo de poca importancia y creyendo que otros individuos que hacen alardes de sus capacidades deben real­mente saber más que ellas y es que el planeta gobernante, Júpiter, da a estas gentes una naturaleza tan generosa que los convierte en demasiado confiadas.
+
+En este sentido, se atienen a las promesas de otras gentes y son, con frecuencia, fácilmente engañadas.   Además, son culpadas por los errores de otros, que descargan su peso en los bondados nacidos bajo Piscis. A menudo, son víctima de sutiles de ingeniosos complots, que ni sospechan.
+
+Sin embargo, tienen varios factores salvadores en este signo. Una es la tendencia a ser optimistas inspirada por Júpiter y es que estas personas nacidas bajo ese signo pasan sobre grandes dificultades como si fueran insignificantes.
+
+Por el otro lado, son muy apreciados por sus amigos y las gentes buenas en general, que lo ayudan a hacer resaltar sus puntos.
+
+La calma y la paciencia son otros de los factores de los nativos de este signo que los ayuda a obtener el éxito sobre otros signos que se desvanecen en sus intenciones por carecer de esas dos cualidades.
+
+No deben oír nunca a solicitudes persuasivas a su generosidad, sino estudiar los hechos, llegar por si mismas a conclusiones y luego, si es necesario, deben buscar el consejo de amigos probados e imparciales.
+
+Los nacidos bajo el signo de Piscis son profundos en su devoción a los amigos y familiares, aun bajo las circunstancias más desfavora­bles. No se dejan aminorar en su optimismo y ella inspiran a otros la misma confianza..
+En negocios, los nacidos bajo el signo de Piscis tienen éxito en grandes organizaciones en que pueden ser apreciadas su hones­tidad y capacidades ejecutivas. También logrran éxito en puestos de gobierno y estudios científicos. Muchos triunfan como ingenie­ros. Están interesados en temas históricos y todas las cuestiones de la naturaleza.
+
+    
+    
+    </P>   
+    <br>
+    <h1>ESCORPIÓN (DE 23 DE OCTUBRE AL 21 DE NOVIEMBRE)</h1>
+    <img src="imagenes/escorpio.jpg"  width="70%" height="70%">
+    <P>
+    Es un signo cuyas principales características son la fuerte determinación, confianza y control propio. El planeta gobernante, Marte, les provee el poder de tener la voluntad de vencer todos los obstáculos.
+
+Los nacidos bajo este signo muestran maneras suaves, reservadas, pero, una vez entrados en acción, son determinados, agresivos y do­minantes, siempre lista para defender una causa.
+
+Si trabajan para el bien de otros,estos individuos alcanzan grandes alturas y son muy respetados, pero, si, por el contrario, aplican su fuerte determinación sólo a hacer dinero, particularmente en campos que tienen relación con el bienestar humano, sus buenas cualidades ce­derán el camino al egoísmo, celos y aún acciones despiadadas.
+
+Los individuos de Escorpión son bruscos, discutidores y peleado­res, pero, su sangre fría, les permite engañar a sus opositores y probablemente, en una confrontación, Escorpión sea el ganador.
+
+Sin embargo, esto hace que los demás no lo vean positivamente.  Por ello, se recomienda moderar su tem­peramento así como sus acciones.  Es importante que comprendan que, a veces, se gana más cediendo que combatiendo y que la mejor batalla es aquella que no se realiza.
+
+En negocios, una poderosa personalidad de Escorpión puede triun­far en prácticamente cualquier línea siendo excelentes administradores de sucursales y jefes de grandes industrias.. Profesionalmente, los nacidos ba­jo el signo de Escorpió
+</P>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="page4" data-add-back-btn="true">
+    <div div class="ui-btn-hover-b" data-role="header">
+     OCIOS
+	</div> 
+    <div class="fondo de ocios" data-role="content" style="background-image:url(imagenes/fondo.jpg)">
+    <div id="textocap">
+  <div class="tit">1. Mensajería: WhatsApp</div>
+  
+<div class="texto">Puede que no quieras tenerla a principio, pero al final la gran mayoría acaba teniendo WhatsApp. <br>Es mejor que no te resistas y descargues la aplicación ya. Es la más famosa y creo que la ma-</br>yoría sabe para qué es:<br> mensajería instantánea y gratuita, además de envio de vídeos cortos, fotografías y notas de voz.</br>	
+Es mas rapida y eficaz para enviar mensajes y tiene un costo muy minimo por año.</div> 
+<br><img src="ocios imagenes/1.jpg" width="70%" height="70%">
+</br>
+<div class="tit">2. Redes sociales: Facebook, Twitter, e Instagram</div>
+
+<div class="texto"><br>¡Afrontémoslo! De cada tres veces que miramos nuestsro teléfono móvil, estamos consultando redes sociales.</br> Las imprescindibles, las que la mayoría de usuarios actualizan a diario son tres: Facebook, Twitter o Instagram.<br> Las tres juntas o por separado son las primeras aplicaciones básicas para instalar en cuanto tengas tu nuevo</br> teléfono móvil en las manos.</div>
+<br><img src="ocios imagenes/2.jpg" width="70%" height="70%">
+</br>
+<div class="tit">3. Juegos:Pou</div>
+  <div class="texto">¡Tamagotchi es cosa del pasado! Ahora tenemos a Pou dentro de nuestro teléfono móvil.Pou es la mascota virtual<br>para tu Android. ¿Crees que puedes cuidar a tu mascota y hacerlo crecer? Al más puro estilo Tamagochi del futuro,</br> podrás alimentar, limpiar y jugar con Pou.Además podrás subir de nivel.</div> 
+<br><img src="ocios imagenes/3.jpg" width="70%" height="70%">
+</br>
+<div class="tit">4. Fotos:PicsArt</div>
+  <div class="texto">Hay algunas aplicaciones que no nos cansamos de probar como son las apps de edición de fotos<br> (todos llevamos un fotógrafo en nuestro interior).Es muy facil de utilizar es gratuita y solo se</br> requiere de tiempo para poder editar una fotografia ya que nos da las herramientas necesarias para hacerlo.</div>
+  <br><img src="ocios imagenes/4.jpg" width="70%" height="70%">
+  ></br>
+<div class="tit"> 5. Misica y Audio:Spotify </div>
+  <div class="texto">Spotify es uno de los mejores servicios de música. La aplicación es gratis, pero el servicio puede<br> ser de pago o gratis, aunque este último ofrece horas limitadas de música y publicidad. Tiene<br> muchísimos discos, canciones y artistas en su base de datos.Ahora Spotify es gratis en móvil y tablet.</br> Escucha la música perfecta estés donde estés. Con Spotify tienes acceso a todo un mundo de música.<br> Puedes escuchar a artistas y álbumes o crear tus propias playlists con tus canciones favoritas.</br></div>
+	<br><img src="ocios imagenes/5.jpg" width="70%" height="70%">
+  <br>
+  </div>
+ </div>
+</div>
+</div>
+
+
+
+<div data-role="page" id="page7" data-add-back-btn="true">
+	<div data-role="header">
+		 <div class="ui-btn-hover-b" data-role="header">ESTUDIANTIL</div>
+	</div>
+	<div data-role="content">	
+		<br>
+        <a href="http://www.monografias.com/trabajos40/ejercicios-de-derivadas/ejercicios-de-derivadas.shtml" title="algebra" target="_blank">algebra</a>
+        <br>
+        <br>
+        <a href="http://html.rincondelvago.com/algebra-basica-y-ecuaciones.html" title="derivadas" target="_blank">derivada</a>
+    	
+	</div>
+</div>
+
+
+
+<div class="ui-btn-up-e" id="page8" data-add-back-btn="true" data-role="page">
+	<div data-role="header">
+		 <div class="ui-btn-hover-b" data-role="header">CREDITOS DE LA APLICACION</div>
+	</div>
+	<div class="Textocreditos" data-role="content">	
+    <div id="textocap">
+		<p>Creada por: Equipo 4</p>
+		<p>Integranes de Equipo:</p>
+		<p>Esmeralda Marquez Lechuga</p>
+		<p>Natalia Sampayo Vazquez</p>
+		<p>Victor Manuel Martinez Gomez</p>
+		<p>Juan Daniel Cruz Martinez</p>
+		<p>Eugenia Elizabeth Vazquez Reyes</p>
+		<p>Jonathan Bonilla Vargas</p>
+		<p>Producida para:</p>
+		<p>Proyecto final de la materia &quot;Desarrolla aplicaciones Moviles&quot;</p>
+		<p>Profesor : David Nieto Lopez</p>
+        </div>
+        </div>
+	<div class="ui-btn-up-e" data-role="footer">
+	   <div class="ui-btn-hover-b" data-role="header">C.B.T.i.s. 86 Tecnicos en PROGRAMACION 4"E"</div>
+       
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>
